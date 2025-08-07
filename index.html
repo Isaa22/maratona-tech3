@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Emergencial | Quando o professor falta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h1>Aula<span>Emergencial</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Início</a></li>
+                    <li><a href="#">Aulas Salvas</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h2>Professor faltou? Sem problemas!</h2>
+                    <p>Gere uma aula completa sobre qualquer assunto em segundos</p>
+                </div>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Digite o tema da aula (ex: Segunda Guerra Mundial)...">
+                    <button id="generate-btn">Gerar Aula <i class="fas fa-magic"></i></button>
+                </div>
+            </section>
+
+            <section class="loading-section hidden">
+                <div class="loader">
+                    <div class="spinner"></div>
+                    <p>Criando sua aula especializada...</p>
+                </div>
+            </section>
+
+            <section class="result-section hidden">
+                <div class="lesson-controls">
+                    <button id="save-lesson"><i class="fas fa-save"></i> Salvar Aula</button>
+                    <button id="export-pdf"><i class="fas fa-file-pdf"></i> Exportar PDF</button>
+                </div>
+                
+                <div class="slideshow-container">
+                    <!-- Slides will be generated here by JavaScript -->
+                </div>
+                
+                <div class="slide-navigation">
+                    <button id="prev-slide"><i class="fas fa-chevron-left"></i> Anterior</button>
+                    <span id="slide-counter">Slide 1 de 10</span>
+                    <button id="next-slide">Próximo <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </section>
+
+            <section class="popular-topics">
+                <h3>Tópicos populares:</h3>
+                <div class="topic-buttons">
+                    <button class="topic-btn" data-topic="Revolução Francesa">Revolução Francesa</button>
+                    <button class="topic-btn" data-topic="Fotossíntese">Fotossíntese</button>
+                    <button class="topic-btn" data-topic="Segunda Guerra Mundial">Segunda Guerra Mundial</button>
+                    <button class="topic-btn" data-topic="Teorema de Pitágoras">Teorema de Pitágoras</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2023 AulaEmergencial - Solução para quando o professor falta</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
